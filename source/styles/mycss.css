@@ -1,0 +1,96 @@
+@import url(ttps://fonts.googleapis.com/css?family=OpenSans&display=swap);
+
+
+body {
+    font-family: Open Sans, serif;
+    background: linear-gradient(90deg, #0d5b52 0%, #7b7575 100%);
+}
+
+.nav-link {
+    color: rgb(4, 4, 4);
+}
+
+.navbar-nav .nav-link.active {
+    color: #0b0b0b;
+}
+
+.navbar-brand img {
+    width: 40px;
+}
+
+.navbar-toggler {
+    background-color: gray;
+}
+
+
+
+.sidebar {
+    color: black;
+    background: linear-gradient(300deg, #0d5b52 0%, #7b7575 100%);
+}
+
+.card {
+    background: linear-gradient(300deg, #0d5b52 0%, #7b7575 100%);
+    color: black
+}
+
+.card a {
+    text-decoration: none;
+    color: black;
+}
+
+.slide-text,
+.footer-text {
+    margin: auto auto;
+    font-size: 150%;
+}
+
+footer,.btn-primary
+     {
+    background: linear-gradient(300deg, #0d5b52 0%, #7b7575 100%)
+}
+
+.media-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.call-anim {
+    animation: myAnim 2s ease 0s infinite normal forwards;}
+
+    @keyframes myAnim {
+
+        0%,
+        100% {
+            transform: translateX(0);
+        }
+
+        10%,
+        30%,
+        50%,
+        70% {
+            transform: translateX(-10px);
+        }
+
+        20%,
+        40%,
+        60% {
+            transform: translateX(10px);
+        }
+
+        80% {
+            transform: translateX(8px);
+        }
+
+        90% {
+            transform: translateX(-8px);
+        }
+    }
+
+
+@media (max-width: 755px) {
+    .carousel-indicators {
+        display: none;
+    }
+}
